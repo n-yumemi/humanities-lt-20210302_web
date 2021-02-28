@@ -1,0 +1,354 @@
+/* --- * --- * ---
+  INDEX
+* Variable
+* Base
+* UI Parts
+* Layout
+* Component
+--- * --- * --- */
+
+/* --- * --- * ---
+  Variable
+--- * --- * --- */
+:root {
+  --color-text: #2C2C2C;
+  --color-background-parts: #e7e7e7;
+  --color-border: #aaaaaa;
+
+  /* Font Size */
+  --text-size-base: var(--text-size-base);
+  --text-size-large-1: 1rem;
+  --text-size-large-2: 1.45rem;
+  --text-size-large-3: 1.75rem;
+
+  /* Font Weight */
+  --text-weight-nomal: 400;
+  --text-weight-parts: 700;
+
+  /* Sizes */
+  --size-nomal-0: 0;
+  --size-nomal-1: 8px;
+  --size-nomal-2: 16px;
+  --size-mini-1: 2px;
+  --size-mini-2: 4px;
+}
+
+/* --- * --- * ---
+  Base
+--- * --- * --- */
+body {
+  font-size: var(--text-size-base);
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: 1rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  background-size: contain;
+  overflow: hidden;
+}
+
+/* --- * --- * ---
+  UI Parts
+--- * --- * --- */
+button, input {
+  height: var(--text-size-large-3);
+  padding: var(--size-mini-2) var(--size-nomal-1);
+  font-size: var(--text-size-base);
+  font-weight: 400;
+  border: 1px solid var(--color-border);
+  box-sizing: border-box;
+  border-radius: var(--size-nomal-1);
+}
+
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: var(--size-mini-2) var(--size-nomal-1);
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* --- * --- * ---
+  Layout
+--- * --- * --- */
+.header,
+.main {
+  padding: var(--size-nomal-2);
+}
+
+/* --- * --- * ---
+  Component
+--- * --- * --- */
+.header {
+  padding-bottom: var(--size-nomal-0);
+  align-items: center;
+  justify-content: space-between;
+}
+.header > .title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.add-todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: var(--size-nomal-2);
+}
+.add-todo .todo-text {
+  width: 100%;
+  margin-right: var(--size-nomal-1);
+}
+.list-todo {
+  width: 100%;
+}
+.list-todo > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: var(--size-nomal-2) var(--size-nomal-0);
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+  justify-content: space-between;
+}
+.list-todo > li:last-child {
+  border: 0;
+}
+/* --- * --- * ---
+  INDEX
+* Variable
+* Base
+* UI Parts
+* Layout
+* Component
+--- * --- * --- */
+
+/* --- * --- * ---
+  Variable
+--- * --- * --- */
+:root {
+  --color-text: #2C2C2C;
+  --color-background-parts: #e7e7e7;
+  --color-border: #aaaaaa;
+
+  /* Font Size */
+  --text-size-base: var(--text-size-base);
+  --text-size-large-1: 1rem;
+  --text-size-large-2: 1.45rem;
+  --text-size-large-3: 1.75rem;
+
+  /* Font Weight */
+  --text-weight-nomal: 400;
+  --text-weight-parts: 700;
+
+  /* Sizes */
+  --size-nomal-0: 0;
+  --size-nomal-1: 8px;
+  --size-nomal-2: 16px;
+  --size-mini-1: 2px;
+  --size-mini-2: 4px;
+}
+
+/* --- * --- * ---
+  Base
+--- * --- * --- */
+body {
+  font-size: var(--text-size-base);
+  color: var(--color-text);
+  font-weight: 400;
+  line-height: 1rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  background-size: contain;
+  overflow: hidden;
+}
+
+/* --- * --- * ---
+  UI Parts
+--- * --- * --- */
+button, input {
+  height: var(--text-size-large-3);
+  padding: var(--size-mini-2) var(--size-nomal-1);
+  font-size: var(--text-size-base);
+  font-weight: 400;
+  border: 1px solid var(--color-border);
+  box-sizing: border-box;
+  border-radius: var(--size-nomal-1);
+}
+
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: var(--size-mini-2) var(--size-nomal-1);
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* --- * --- * ---
+  Layout
+--- * --- * --- */
+.header,
+.main {
+  padding: var(--size-nomal-2);
+}
+
+/* --- * --- * ---
+  Component
+--- * --- * --- */
+.header {
+  padding-bottom: var(--size-nomal-0);
+  align-items: center;
+  justify-content: space-between;
+}
+.header > .title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.add-todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: var(--size-nomal-2);
+}
+.add-todo .todo-text {
+  width: 100%;
+  margin-right: var(--size-nomal-1);
+}
+.list-todo {
+  width: 100%;
+}
+.list-todo > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: var(--size-nomal-2) var(--size-nomal-0);
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+  justify-content: space-between;
+}
+.list-todo > li:last-child {
+  border: 0;
+}
+/* --- * --- * ---
+  INDEX
+* Variable
+* Base
+* UI Parts
+* Layout
+* Component
+--- * --- * --- */
+
+/* --- * --- * ---
+  Variable
+--- * --- * --- */
+:root {
+  --color-text: #2C2C2C;
+  --color-background-parts: #e7e7e7;
+  --color-border: #aaaaaa;
+
+  /* Font Size */
+  --text-size-base: 0.75rem;
+  --text-size-large-1: 1rem;
+  --text-size-large-2: 1.45rem;
+  --text-size-large-3: 1.75rem;
+
+  /* Font Weight */
+  --text-weight-nomal: 400;
+  --text-weight-parts: 700;
+
+  /* Sizes */
+  --size-nomal-0: 0;
+  --size-nomal-1: 8px;
+  --size-nomal-2: 16px;
+  --size-mini-1: 2px;
+  --size-mini-2: 4px;
+}
+
+/* --- * --- * ---
+  Base
+--- * --- * --- */
+body {
+  font-size: var(--text-size-base);
+  color: var(--color-text);
+  font-weight: var(--text-weight-nomal);
+  line-height: 1rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  background-size: contain;
+  overflow: hidden;
+}
+
+/* --- * --- * ---
+  UI Parts
+--- * --- * --- */
+button, input {
+  height: var(--text-size-large-3);
+  padding: var(--size-mini-2) var(--size-nomal-1);
+  font-size: var(--text-size-base);
+  font-weight: var(--text-weight-nomal);
+  border: 1px solid var(--color-border);
+  box-sizing: border-box;
+  border-radius: var(--size-nomal-1);
+}
+
+.button {
+  display: inline-flex;
+  padding: var(--size-mini-2) var(--size-nomal-1);
+  font-weight: var(--text-weight-parts);
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* --- * --- * ---
+  Layout
+--- * --- * --- */
+.header,
+.main {
+  padding: var(--size-nomal-2);
+}
+
+/* --- * --- * ---
+  Component
+--- * --- * --- */
+.header {
+  padding-bottom: var(--size-nomal-0);
+  align-items: center;
+  justify-content: space-between;
+}
+.header > .title {
+  font-size: var(--text-size-large-1);
+  font-weight: var(--text-weight-parts);
+}
+.add-todo {
+  display: flex;
+  margin-bottom: var(--size-nomal-2);
+}
+.add-todo .todo-text {
+  width: 100%;
+  margin-right: var(--size-nomal-1);
+}
+.list-todo {
+  width: 100%;
+}
+.list-todo > li {
+  display: flex;
+  padding: var(--size-nomal-2) var(--size-nomal-0);
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+  justify-content: space-between;
+}
+.list-todo > li:last-child {
+  border: 0;
+}
