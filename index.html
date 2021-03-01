@@ -17,14 +17,14 @@
     
     <main class="main">
       <div class="add-todo">
-        <input class="todo-text" type="text" placeholder="やること" v-model="newTodo">
-        <input class="button" type="button" value="追加" v-on:click="addTodo">
+        <input type="text" class="todo-text" placeholder="やること" v-model="newTodo">
+        <button class="button" v-on:click="addTodo">追加</button>
       </div>
 
       <ul class="list-todo">
         <li v-for="(todo, index) in todos" v-bind:key="todo.id">
             <p class="text">{{ todo.text }}</P>
-            <button class="button" v-on:click="removeTodo(index, todo)">完了</button>
+            <button class="button" v-on:click="removeTodo(index)">完了</button>
         </li>
       </ul>
     </main>

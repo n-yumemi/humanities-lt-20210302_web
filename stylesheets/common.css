@@ -61,8 +61,7 @@ button, input {
 }
 
 .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+  min-width: fit-content;
   display: inline-flex;
   padding: var(--size-mini-2) var(--size-nomal-1);
   font-weight: 700;
